@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-meal">
+      <header>
+        <input type="text" class="searchMeal" id="searchMeal" />
+        <sub
+          ><sub>
+            <span class="material-icons" id="searchBtn"> search </span>
+          </sub>
+        </sub>
+      </header>
+      <div class="fav-meal">
+        <h3>Favourite Mails</h3>
+        <ul id="fav-list"></ul>
+      </div>
+      <div class="rand-meal">
+        <img id="rand-image" src="" alt="" />
+        <h4 id="random_meal_text"></h4>
+        <div class="rand-footer">
+          <span id="rand-text"></span>
+          <span class="material-icons favorite" id="rand-fav"> favorite </span>
+        </div>
+      </div>
+      <div class="popup-container hidden" id="popup-container">
+        <div class="popup" id="meal-info">
+          <button class="close-popup" id="close-popup">
+            <span class="material-icons"> close </span>
+          </button>
+          <div class="meal-info" id="meal-popup">
+          
+        </div>
+      </div>
+      <div class="err-app" id="err-app"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--
+    Steps:
+    1)  HTML        Create Structure: app-mail:header,fav-mail,rand-mail,err-app; done.
+    2)  HTML        Add elements to classes.                done.
+    3)  HTML        Set Element data for structure.         done.
+    4)  CSS         Add CSS style to Elements and classes       done.
+    5)  JAVASCRIPT  Create General Functions to get mails, mailById and mailByName 
+    6)  JAVASCRIPT  Data Bind to elements in fav-mail and rand-mail
+    7)  JAVASCRIPT  Add Events to serch button and favourite button.
+    8)  ALL         Test Cenarios
+-->

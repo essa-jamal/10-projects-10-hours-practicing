@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  width: 600px;
+  max-height: 500px;
+  border: 2px rgb(133, 9, 133) solid;
+  box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.03);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.toolbox {
+  background-color: #922b05;
+  width: 600px;
+  padding: 0.5rem;
+  display: flex;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.toolbox button,
+.toolbox input,
+.toolbox span {
+  padding: 0;
+
+  margin: 0.5rem 0.25rem;
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: 1px rgba(92, 2b, 05, 1) solid;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+  font-weight: bolder;
+}
+
+.toolbox span {
+  padding: 0.41rem;
+  cursor: none;
+  border: 1px white solid;
+  color: rgb(236, 231, 231);
+  font-weight: normal;
+}
+.toolbox #clean {
+  margin-left: auto;
+}
+.menus {
+  display: flex;
+  border-radius: 3px;
+}
+.menu {
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  color: white;
+  margin: 0.5rem 0.25rem;
+  border-radius: 10px;
+  border: 1px white solid;
+  cursor: pointer;
+}
+.toolbox button:hover,
+.menu:hover {
+  background-color: white;
+  color: #922b05;
+}
+#clean{
+color: white;
+}
+.fill{
+  
+  display: flex;
+  background-color: transparent;
+  border: 1px white;
+}
+input.radio,#checkbox{
+width: 1rem;
+
+}
+label{
+  color: white;
+  margin-top: 1rem;
+}
+.visited{
+background-color: white;
+color: #922b05;
+}

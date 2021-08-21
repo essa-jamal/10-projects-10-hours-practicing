@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(213, 214, 214);
+  background-image: linear-gradient(
+    90deg,
+    rgb(158, 157, 157),
+    rgba(238, 236, 236, 0.1),
+    #fff
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.w-container {
+  width: 14rem;
+  height: 25rem;
+  background-color: rgb(160, 155, 155);
+  border-radius: 3px;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.w-show {
+  width: 100%;
+  height: 40%;
+  background-image: url(images/london.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.w-days-show {
+  background-color: white;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.day {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0.2rem 3rem;
+}
+i {
+  
+  margin-top: -.6rem;
+  margin-left:.2rem ;
+  color: rgb(240, 238, 238);
+
+}
+.day span {
+  margin: 0;
+color: rgb(8, 90, 141);
+}
+.w-location {
+  color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 13%;
+
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+
+}
+

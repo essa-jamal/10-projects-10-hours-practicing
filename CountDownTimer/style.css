@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background: url('images/snow.jpg');
+    background-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer
+}
+.countdown-container{
+   display: flex;
+   background-color: rgba(0,0,0,.05);
+   border-radius: 30px;
+   box-shadow: 5px 10px rgba(0,0,0,.03);
+   padding: 10px;
+   z-index: -1;
+   ;
+}
+h1{
+    margin-bottom: -100px;
+    margin-top: 100px;
+    margin-right: 10px;
+    color: white;
+}
+.big-text{
+    margin-bottom:-1px;
+    margin-right: 15px;
+    font-size: 5rem;
+    font-weight: bold;
+    
+
+    
+}
+
+span{
+    color: goldenrod;
+}
+.second-container p{
+color: purple;
+cursor: pointer;
+}
+
+#events{
+width: 300px;
+font-size: 2rem;
+border-radius: 10px;
+color: white;
+border-color: indigo;
+background-color:rgb(167, 122, 167) ;
+cursor: pointer;
+}
+#events:hover{
+background-color:purple;
+cursor: pointer;
+
+}
+
+.setting{
+    margin-top: 20px;
+   
+   
+}
+.material-icons{
+    width: 1rem;
+    color: purple;
+    cursor: pointer;
+}

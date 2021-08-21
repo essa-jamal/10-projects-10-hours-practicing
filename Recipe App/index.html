@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="recip-container">
+      <header>
+        <input type="text" class="search_txt" id="search_txt" />
+
+        <i class="material-icons" id="searchbtn">search</i>
+      </header>
+      <div class="recip-fav">
+        <h3>Favourite Meals</h3>
+        <ul id="meal_Fav">
+
+          
+        </ul>
+      </div>
+      <div id="meals" class="meals">
+        <div class="random_food">
+          <img src="" alt="" id="random_food_image" />
+          <h4 id="random_meal_text">Sea food</h4>
+          <span class="meal-body">
+            <span id="meal_body"> Span Food</span>
+            <span id="icons" style="opacity: 0.3">
+              <i class="material-icons" onclick="favorite()">favorite</i></span
+            >
+          </span>
+        </div>
+        <div class="template">
+          
+        </div>
+      </div>
+    <label id="lblerror"></label>  
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

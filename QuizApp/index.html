@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz_container"  style="visibility: hidden;">
+        <h2 id="quiz_text">question</h2>
+        <ul>
+            <li><input type="radio" name="anwer" id="a" class="answer" ><label for="a" id="ab">question</label> </li>
+            <li><input type="radio" name="anwer" id="b" class="answer"><label for="b"  id="bb">question</label> </li>
+            <li><input type="radio" name="anwer" id="c" class="answer" ><label for="c" id="cb">question</label> </li>
+            <li><input type="radio" name="anwer" id="d" class="answer" ><label for="d" id="db">question</label> </li>
+        </ul>
+        <button id="SubmitButton">Submit</button>
+    </div>
+    <div class="quiz-prepare" id="quiz_prepare">
+        <h2 id="quiz-text">Select Quiz Type</h2>
+
+        <select name="quizs" id="quizs" class="quizs" onchange="getQuizByType(this.options[this.selectedIndex].text)" >Select
+            <option class="option" value="0">Select Event</option>
+           
+         </select>
+    
+        <button id="SubmitButtonPrepare" onclick="toggle()">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

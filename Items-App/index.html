@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="item-container">
+      <button class="addItem"><i class="fa fa-plus"></i> Add Item</button>
+
+      <div class="template_fwd">
+        <img src="images/profile/logo.png" alt="logo" class="logo" />
+        <img src="images/profile/rozita.jpg" class="profile_images" alt="" />
+        <div class="template-detail">
+          <div>
+            <label for="name">NAME</label>
+            <input type="text" class="name hidden" id="name2" name="name" />
+            <span class="name">Essa Jamal</span>
+          </div>
+
+          <div>
+            <label for="title">TITLE</label>
+            <input type="text" id="title2" class="title hidden" name="title" />
+            <span class="title" class="title">Charging / billing engineer</span>
+          </div>
+
+          <div>
+            <label for="idnumber">ID NUMBER</label>
+            <input
+              type="text"
+              id="idnumber2"
+              class="idnumber hidden"
+              name="idnumber"
+            />
+            <span class="idnumber">0517</span>
+          </div>
+
+          <div>
+            <label for="bloodtype">BLOOD TYPE:</label>
+            <input
+              type="text"
+              id="bloodtype2"
+              class="bloodtype hidden"
+              name="bloodtype"
+            />
+            <span class="bloodtype">b+</span>
+            <label for="expirydate">Expiry Date:</label>
+            <input type="date" id="expirydate" class="expirydate hidden" />
+            <span id="expirydate">2022/02/01</span>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+
+      <div class="template_bwd">
+        <img src="images/profile/logo.png" alt="logo" class="logo" />
+        <img src="images/profile/rozita.jpg" class="profile_images" alt="" />
+        <div class="template-detail">
+          <div>
+            <label for="name">ناو:</label>
+            <input type="text" class="name hidden" id="name" name="name" />
+            <span class="name">عدسا جمال عزیز</span>
+          </div>
+
+          <div>
+            <label for="title">ناونیشانی کار:</label>
+            <input type="text" id="title" class="title hidden" name="title" />
+            <span class="title" class="title">ئەندازیاری چارجین و بیڵینگ</span>
+          </div>
+
+          <div>
+            <label for="idnumber">ژمارەی کارت:</label>
+            <input
+              type="text"
+              id="idnumber"
+              class="idnumber hidden"
+              name="idnumber"
+            />
+            <span class="idnumber">0517</span>
+          </div>
+
+          <div>
+            <label for="bloodtype">گروپی خوێن:</label>
+            <input
+              type="text"
+              id="bloodtype"
+              class="bloodtype hidden"
+              name="bloodtype"
+            />
+            <span class="bloodtype">b+</span>
+            <label for="expirydate">بەرواری بەسەرچون:</label>
+            <input type="date" id="expirydate" class="expirydate hidden" />
+            <span id="expirydate">2022/02/01</span>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

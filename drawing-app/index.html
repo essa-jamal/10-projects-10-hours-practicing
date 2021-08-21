@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drawing app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="toolbox">
+        <button id="increase">+</button>
+        <span id="size">10</span>
+        <button id="decrease">-</button>
+        <input type="color" id="color" />
+        <div class="menus">
+          <ul class="menu" id="shapes">
+            shapes
+          </ul>
+          <ul class="menu" id="events">
+            events
+          </ul>
+          <div class="fill" id="fill" >
+          <input type="checkbox" name="fill" id="checkbox"  /><label
+            for="checkbox"
+          >Fill</label></div>
+          <input type="radio" class="radio"  name="shape"  onclick="selectShape()" id="circle">
+          <label for="cirle">circle</label>
+          
+          <input type="radio" class="radio" name="shape"  onclick="selectShape()" id="rectangle">
+          <label for="rectangle">rect</label>
+          
+          <input type="radio" class="radio" name="shape" checked onclick="selectShape()" id="line">
+          <label for="line">line</label>
+        </div>
+        <button id="clean">
+          <i class="fa fa-leanpub" aria-hidden="true"></i>
+        </button>
+      </div>
+      <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
